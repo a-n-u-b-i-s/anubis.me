@@ -4,6 +4,7 @@ import Link from 'next-translate/Link';
 import i18nConfig from "../i18n.json";
 import styled from "styled-components";
 import useDarkMode from "use-dark-mode";
+import { FaTwitter, FaLinkedin, FaSpotify, FaMoon, FaSun } from "react-icons/fa";
 
 const { allLanguages } = i18nConfig;
 
@@ -88,6 +89,7 @@ const Button = styled.a`
   padding: 1rem;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
+  font-size: 1.2rem;
   background-color: ${props => props.theme.color.background};
   border: 1px solid ${props => props.theme.color.accent};
   color: ${props => props.theme.color.text};
@@ -102,14 +104,9 @@ const FlagIcon = styled.img`
   height: 1.334rem;
 `
 
-const Icon = styled.i`
-  width: 1.2rem;
-  height: 1.2rem;
-  font-size: 1.2rem;
-`
-
 const Label = styled.b`
-  margin-left: 0.5rem
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
 `
 
 export default function Home() {
@@ -165,17 +162,17 @@ export default function Home() {
             <DarkLogo src="logo.svg" alt={logoAltText} />
             <LightLogo src="logo_light.svg" alt={logoAltText} />
             <Button href={linkedInURL}>
-              <Icon className="fab fa-linkedin"></Icon><Label>{linkedInText}</Label>
+              <FaLinkedin /><Label>{linkedInText}</Label>
             </Button>
             <Button href={twitterURL}>
-              <Icon className="fab fa-twitter"></Icon><Label>{twitterText}</Label>
+              <FaTwitter /><Label>{twitterText}</Label>
             </Button>
             <Button href={spotifyURL}>
-              <Icon className="fab fa-spotify"></Icon><Label>{spotifyText}</Label>
+              <FaSpotify /><Label>{spotifyText}</Label>
             </Button>
             <Bottom>
-              <DarkToggle onClick={darkMode.toggle}><FadeIcon className="fa fa-moon" ></FadeIcon></DarkToggle>
-              <LightToggle onClick={darkMode.toggle}><FadeIcon className="fa fa-sun" ></FadeIcon></LightToggle>
+              <DarkToggle onClick={darkMode.toggle}><FaMoon /></DarkToggle>
+              <LightToggle onClick={darkMode.toggle}><FaSun /></LightToggle>
               <Link href="/" lang={changeLanguage}>
                 <FlagIcon src={`http://catamphetamine.gitlab.io/country-flag-icons/3x2/${changeFlag}.svg`}></FlagIcon>
               </Link>
