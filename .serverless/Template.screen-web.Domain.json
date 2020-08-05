@@ -1,0 +1,13 @@
+{
+  "region": "us-east-1",
+  "privateZone": false,
+  "domain": "chasebox.com",
+  "subdomains": [
+    {
+      "domain": "screen.chasebox.com",
+      "distributionId": "E3PXJFQJHKYJJT",
+      "url": "https://dli9n4ogo9j4w.cloudfront.net",
+      "type": "awsCloudFront"
+    }
+  ]
+}

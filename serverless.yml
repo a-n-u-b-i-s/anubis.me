@@ -1,0 +1,8 @@
+anubis.me:
+  component: "@sls-next/serverless-component@1.15.1"
+  inputs:
+    domain: ["www", "anubis.me"]
+    bucketName: anubis-web
+    name:
+      defaultLambda: anubis-web-lambda
+      apiLambda: anubis-api-lambda
