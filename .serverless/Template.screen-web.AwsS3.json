@@ -1,6 +1,0 @@
-{
-  "name": "screen-web",
-  "region": "us-east-1",
-  "accelerated": true,
-  "url": "https://screen-web.s3.amazonaws.com"
-}

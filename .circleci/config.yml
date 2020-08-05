@@ -21,4 +21,4 @@ jobs:
       - serverless/setup:
           app-name: anubis-web
           org-name: anubis
-      - run: serverless deploy
+      - run: serverless --component=targetComponent
