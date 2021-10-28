@@ -1,6 +1,0 @@
-{
-  "name": "anubis-web",
-  "region": "us-east-1",
-  "accelerated": true,
-  "url": "https://anubis-web.s3.amazonaws.com"
-}
